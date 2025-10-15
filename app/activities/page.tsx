@@ -38,8 +38,13 @@ export default function ActivitiesPage() {
             >
               <Card hover className="h-full">
                 <div className="space-y-4">
-                  <div className="text-6xl">{activity.icon}</div>
-                  <h2 className="text-2xl font-display text-cosmic-gold-400">
+                  <div
+                    className="text-6xl cursor-pointer hover:scale-110 transition-transform"
+                    data-easter-egg-trigger
+                  >
+                    {activity.icon}
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-display font-semibold text-cosmic-gold-500">
                     {activity.name}
                   </h2>
                   <p className="text-cosmic-gray-300 leading-relaxed">
@@ -60,7 +65,7 @@ export default function ActivitiesPage() {
           transition={{ duration: 0.6 }}
         >
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-display text-shadow-glow mb-4">
+            <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500 mb-4">
               Dive Deeper
             </h2>
             <p className="text-cosmic-gray-300 max-w-2xl mx-auto">
@@ -73,7 +78,12 @@ export default function ActivitiesPage() {
           <Card>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="text-4xl">🧘</div>
+                <div
+                  className="text-4xl cursor-pointer hover:scale-110 transition-transform"
+                  data-easter-egg-trigger
+                >
+                  🧘
+                </div>
                 <h3 className="text-2xl font-display text-cosmic-gold-400">
                   Meditation Sessions
                 </h3>
@@ -108,7 +118,12 @@ export default function ActivitiesPage() {
           <Card>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="text-4xl">🌬️</div>
+                <div
+                  className="text-4xl cursor-pointer hover:scale-110 transition-transform"
+                  data-easter-egg-trigger
+                >
+                  🌬️
+                </div>
                 <h3 className="text-2xl font-display text-cosmic-gold-400">
                   Breathwork Circles
                 </h3>
@@ -133,7 +148,12 @@ export default function ActivitiesPage() {
           <Card>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="text-4xl">📚</div>
+                <div
+                  className="text-4xl cursor-pointer hover:scale-110 transition-transform"
+                  data-easter-egg-trigger
+                >
+                  📚
+                </div>
                 <h3 className="text-2xl font-display text-cosmic-gold-400">
                   Book Studies & Wisdom Sharing
                 </h3>
@@ -157,7 +177,12 @@ export default function ActivitiesPage() {
           <Card>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="text-4xl">🤝</div>
+                <div
+                  className="text-4xl cursor-pointer hover:scale-110 transition-transform"
+                  data-easter-egg-trigger
+                >
+                  🤝
+                </div>
                 <h3 className="text-2xl font-display text-cosmic-gold-400">
                   Wisdom Sharing Circles
                 </h3>
@@ -181,7 +206,12 @@ export default function ActivitiesPage() {
           <Card>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="text-4xl">✨</div>
+                <div
+                  className="text-4xl cursor-pointer hover:scale-110 transition-transform"
+                  data-easter-egg-trigger
+                >
+                  ✨
+                </div>
                 <h3 className="text-2xl font-display text-cosmic-gold-400">
                   Open Gathering Hours
                 </h3>
@@ -211,7 +241,7 @@ export default function ActivitiesPage() {
         >
           <Card>
             <div className="space-y-6">
-              <h2 className="text-3xl font-display text-cosmic-gold-400">
+              <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500">
                 Additional Experiences
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-cosmic-gray-300">
@@ -265,7 +295,7 @@ export default function ActivitiesPage() {
         >
           <Card className="text-center">
             <div className="space-y-6">
-              <h2 className="text-3xl font-display text-cosmic-gold-400">
+              <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500">
                 When to Visit
               </h2>
               <div className="space-y-2">

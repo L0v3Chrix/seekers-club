@@ -4,6 +4,7 @@ import './globals.css'
 import CosmicBackground from '@/components/ui/CosmicBackground'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import EasterEggManager from '@/components/ui/EasterEggManager'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -57,10 +58,24 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${cinzel.variable} ${philosopher.variable}`}>
       <body className="min-h-screen flex flex-col font-body text-cosmic-gray-100 antialiased">
+        {/* Skip link for keyboard navigation */}
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <CosmicBackground />
         <Header />
-        <main className="flex-1 relative z-10">{children}</main>
+        <main id="main-content" className="flex-1 relative z-10">{children}</main>
         <Footer />
+        {/* Easter Egg Spiritual Gifts System */}
+        <EasterEggManager
+          triggerChance={0.9}
+          enableScrollTriggers={true}
+          enableTimeTriggers={true}
+          minTimeBeforeTrigger={5000}
+          enableClickTriggers={true}
+          clickTriggerSelector="[data-easter-egg-trigger]"
+          allowRediscovery={true}
+        />
       </body>
     </html>
   )

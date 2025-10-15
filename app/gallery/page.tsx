@@ -47,8 +47,13 @@ export default function GalleryPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl md:text-6xl font-display text-shadow-glow">
-            Sacred Spaces Gallery
+          <h1
+            className="text-4xl md:text-6xl font-display text-shadow-glow"
+            data-easter-egg-trigger
+          >
+            <span className="cursor-pointer hover:opacity-80 transition-opacity">
+              Sacred Spaces Gallery
+            </span>
           </h1>
           <p className="text-lg md:text-xl text-cosmic-gray-300 max-w-3xl mx-auto">
             Explore all {SPACE_COUNTS.total} unique sanctuary spaces designed

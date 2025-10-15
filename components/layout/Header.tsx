@@ -43,13 +43,25 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors duration-200 hover:text-cosmic-gold-400 ${
-                  isActive(link.href)
-                    ? 'text-cosmic-gold-400'
-                    : 'text-cosmic-gray-300'
-                }`}
+                className="relative group"
               >
-                {link.label}
+                <span
+                  className={`text-sm font-medium tracking-wide uppercase transition-all duration-200 ${
+                    isActive(link.href)
+                      ? 'text-cosmic-gold-400 font-semibold'
+                      : 'text-cosmic-gray-300 group-hover:text-cosmic-gold-400'
+                  }`}
+                >
+                  {link.label}
+                </span>
+                {/* Subtle glow on hover only */}
+                <span
+                  className={`absolute -bottom-1 left-0 w-full h-px transition-opacity duration-200 ${
+                    isActive(link.href)
+                      ? 'opacity-0'
+                      : 'opacity-0 group-hover:opacity-100 bg-gradient-to-r from-transparent via-cosmic-gold-500 to-transparent'
+                  }`}
+                />
               </Link>
             ))}
             <TextAndyButton variant="secondary" size="default" />

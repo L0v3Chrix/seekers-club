@@ -241,6 +241,7 @@ export interface GalleryGridProps {
 export interface GalleryCardProps {
   space: SpaceData
   onClick: () => void
+  index: number
 }
 
 export interface CategoryFilterProps {

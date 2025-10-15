@@ -34,7 +34,7 @@ export default function ContactPage() {
           <Card className="text-center">
             <div className="space-y-6">
               <div>
-                <h2 className="text-3xl font-display text-cosmic-gold-400 mb-4">
+                <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500 mb-4">
                   Text {CONTACT.custodian}
                 </h2>
                 <p className="text-cosmic-gray-300 max-w-xl mx-auto">
@@ -74,7 +74,8 @@ export default function ContactPage() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-8 h-8 text-cosmic-gold-400"
+                  className="w-8 h-8 text-cosmic-gold-400 cursor-pointer hover:scale-110 transition-transform"
+                  data-easter-egg-trigger
                 >
                   <path
                     strokeLinecap="round"
@@ -87,7 +88,7 @@ export default function ContactPage() {
                     d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                   />
                 </svg>
-                <h2 className="text-2xl font-display text-cosmic-gold-400">
+                <h2 className="text-2xl md:text-3xl font-display font-semibold text-cosmic-gold-500">
                   Location
                 </h2>
               </div>
@@ -140,7 +141,8 @@ export default function ContactPage() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-8 h-8 text-cosmic-gold-400"
+                  className="w-8 h-8 text-cosmic-gold-400 cursor-pointer hover:scale-110 transition-transform"
+                  data-easter-egg-trigger
                 >
                   <path
                     strokeLinecap="round"
@@ -148,7 +150,7 @@ export default function ContactPage() {
                     d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <h2 className="text-2xl font-display text-cosmic-gold-400">
+                <h2 className="text-2xl md:text-3xl font-display font-semibold text-cosmic-gold-500">
                   Open Hours
                 </h2>
               </div>
@@ -178,7 +180,7 @@ export default function ContactPage() {
         >
           <Card>
             <div className="space-y-6">
-              <h2 className="text-3xl font-display text-cosmic-gold-400">
+              <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500">
                 Common Questions
               </h2>
               <div className="space-y-6">

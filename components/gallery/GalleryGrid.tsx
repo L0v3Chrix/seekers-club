@@ -20,6 +20,7 @@ export default function GalleryGrid({
           <GalleryCard
             key={space.id}
             space={space}
+            index={index}
             onClick={() => onSpaceClick(space, index)}
           />
         ))}

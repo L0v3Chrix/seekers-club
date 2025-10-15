@@ -34,7 +34,7 @@ export default function AboutPage() {
         >
           <Card>
             <div className="space-y-6">
-              <h2 className="text-3xl font-display text-cosmic-gold-400">
+              <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500">
                 Meet Andy, Our Custodian
               </h2>
               <div className="space-y-4 text-cosmic-gray-300 leading-relaxed">
@@ -70,7 +70,10 @@ export default function AboutPage() {
         >
           <Card>
             <div className="space-y-6">
-              <h2 className="text-3xl font-display text-cosmic-gold-400">
+              <h2
+                className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500 cursor-pointer hover:opacity-80 transition-opacity"
+                data-easter-egg-trigger
+              >
                 Our Philosophy
               </h2>
               <div className="space-y-4 text-cosmic-gray-300 leading-relaxed">
@@ -127,7 +130,7 @@ export default function AboutPage() {
         >
           <Card>
             <div className="space-y-6">
-              <h2 className="text-3xl font-display text-cosmic-gold-400">
+              <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500">
                 The Sacred Space
               </h2>
               <div className="space-y-4 text-cosmic-gray-300 leading-relaxed">
@@ -158,7 +161,7 @@ export default function AboutPage() {
         >
           <Card>
             <div className="space-y-6">
-              <h2 className="text-3xl font-display text-cosmic-gold-400">
+              <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500">
                 How It Works
               </h2>
               <div className="space-y-4 text-cosmic-gray-300 leading-relaxed">
@@ -202,7 +205,10 @@ export default function AboutPage() {
             experiment in what happens when we create space for the soul to
             expand, for hearts to connect, and for seekers to find their way.
           </p>
-          <p className="text-2xl text-cosmic-gold-400 font-accent">
+          <p
+            className="text-2xl text-cosmic-gold-400 font-accent cursor-pointer hover:opacity-80 transition-opacity"
+            data-easter-egg-trigger
+          >
             Welcome home, seeker. ✨
           </p>
         </motion.div>

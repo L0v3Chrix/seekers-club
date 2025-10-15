@@ -9,13 +9,13 @@ import PlaceholderImage from '../ui/PlaceholderImage'
  *
  * Individual gallery card with space information
  */
-export default function GalleryCard({ space, onClick }: GalleryCardProps) {
+export default function GalleryCard({ space, onClick, index }: GalleryCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.3, delay: index * 0.1 }}
       className="group"
     >
       <div
