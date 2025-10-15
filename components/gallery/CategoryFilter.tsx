@@ -18,7 +18,7 @@ export default function CategoryFilter({
       {GALLERY_CATEGORIES.map((category) => (
         <motion.button
           key={category.id}
-          onClick={() => onFilterChange(category.value as any)}
+          onClick={() => onFilterChange(category.value)}
           className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
             currentFilter === category.value
               ? 'bg-cosmic-gold-500 text-cosmic-purple-950 shadow-lg shadow-cosmic-gold-500/30'

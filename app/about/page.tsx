@@ -39,9 +39,9 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-cosmic-gray-300 leading-relaxed">
                 <p>
-                  The Seekers Club exists because of {CONTACT.custodian}'s
+                  The Seekers Club exists because of {CONTACT.custodian}&apos;s
                   vision—a vision to create a space where authentic connection,
-                  healing, and growth aren't just welcomed, but celebrated.
+                  healing, and growth aren&apos;t just welcomed, but celebrated.
                 </p>
                 <p>
                   More than just a property owner, {CONTACT.custodian} is the
@@ -52,7 +52,7 @@ export default function AboutPage() {
                   seekers from all walks of life.
                 </p>
                 <p>
-                  This isn't a business—it's a calling. Every space has been
+                  This isn&apos;t a business—it&apos;s a calling. Every space has been
                   thoughtfully designed to hold whatever you bring: joy, grief,
                   curiosity, or simply the need to sit in silence.
                 </p>
@@ -112,7 +112,7 @@ export default function AboutPage() {
                   </h3>
                   <p>
                     This space prioritizes authentic connection over profit.
-                    It's a labor of love, maintained by those who believe in
+                    It&apos;s a labor of love, maintained by those who believe in
                     its mission.
                   </p>
                 </div>
@@ -139,7 +139,7 @@ export default function AboutPage() {
                   been transformed into a multi-dimensional sanctuary. With 18
                   distinct spaces—from cozy meditation nooks to expansive
                   gathering halls, from outdoor fire circles to movement
-                  studios—there's a corner for every mood and practice.
+                  studios—there&apos;s a corner for every mood and practice.
                 </p>
                 <p>
                   Every space has been intentionally curated to support
@@ -167,8 +167,8 @@ export default function AboutPage() {
               <div className="space-y-4 text-cosmic-gray-300 leading-relaxed">
                 <p>
                   The Seekers Club is open daily from 8 AM to 8 PM. Drop-ins
-                  are welcome—no appointment needed. Whether you're seeking 10
-                  minutes of quiet or a full day of immersion, you're invited
+                  are welcome—no appointment needed. Whether you&apos;re seeking 10
+                  minutes of quiet or a full day of immersion, you&apos;re invited
                   to use the space as you need.
                 </p>
                 <p>
@@ -178,7 +178,7 @@ export default function AboutPage() {
                   show up and see what resonates.
                 </p>
                 <p>
-                  Questions? Text {CONTACT.custodian} anytime. He's here to
+                  Questions? Text {CONTACT.custodian} anytime. He&apos;s here to
                   support your journey in whatever way serves you best.
                 </p>
               </div>
@@ -201,7 +201,7 @@ export default function AboutPage() {
           transition={{ duration: 0.6 }}
         >
           <p className="text-xl text-cosmic-gray-300 max-w-2xl mx-auto leading-relaxed">
-            This is more than a meditation center. It's a living, breathing
+            This is more than a meditation center. It&apos;s a living, breathing
             experiment in what happens when we create space for the soul to
             expand, for hearts to connect, and for seekers to find their way.
           </p>

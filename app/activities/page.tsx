@@ -69,7 +69,7 @@ export default function ActivitiesPage() {
               Dive Deeper
             </h2>
             <p className="text-cosmic-gray-300 max-w-2xl mx-auto">
-              Here's what you can expect from each type of gathering at The
+              Here&apos;s what you can expect from each type of gathering at The
               Seekers Club.
             </p>
           </div>
@@ -190,8 +190,8 @@ export default function ActivitiesPage() {
               <div className="space-y-2 text-cosmic-gray-300">
                 <p>
                   Structured sharing circles where seekers come together to
-                  speak and listen from the heart. These aren't therapy
-                  sessions—they're containers for authentic expression,
+                  speak and listen from the heart. These aren&apos;t therapy
+                  sessions—they&apos;re containers for authentic expression,
                   witnessing, and collective wisdom.
                 </p>
                 <p>

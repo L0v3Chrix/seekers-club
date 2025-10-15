@@ -12,7 +12,7 @@ import SacredGeometry from './SacredGeometry'
  * Delivers the cosmic/psychedelic aesthetic from the design system
  */
 export default function CosmicBackground({
-  variant = 'default',
+  // variant = 'default',
   particles = true,
   animated = true,
   className = '',

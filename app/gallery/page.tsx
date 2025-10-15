@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { GALLERY_SPACES, getSpacesByCategory } from '@/lib/placeholders'
+import { getSpacesByCategory } from '@/lib/placeholders'
 import { SPACE_COUNTS } from '@/lib/placeholders'
 import { SpaceData, GalleryFilter } from '@/lib/types'
 import Container from '@/components/ui/Container'

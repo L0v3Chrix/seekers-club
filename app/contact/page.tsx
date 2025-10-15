@@ -50,7 +50,7 @@ export default function ContactPage() {
 
               <div className="text-cosmic-gray-400 text-sm">
                 <p>
-                  The message will pre-fill with "seeker seeking seeker" but
+                  The message will pre-fill with &quot;seeker seeking seeker&quot; but
                   feel free to write whatever resonates.
                 </p>
               </div>
@@ -189,9 +189,9 @@ export default function ContactPage() {
                     Do I need to book ahead?
                   </h3>
                   <p className="text-cosmic-gray-300">
-                    Nope! We're open daily during the hours listed above. Just
+                    Nope! We&apos;re open daily during the hours listed above. Just
                     drop by whenever feels right. For specific gatherings or if
-                    you want to check what's happening, text {CONTACT.custodian}
+                    you want to check what&apos;s happening, text {CONTACT.custodian}
                     .
                   </p>
                 </div>
@@ -220,7 +220,7 @@ export default function ContactPage() {
                     Can I host an event here?
                   </h3>
                   <p className="text-cosmic-gray-300">
-                    Absolutely! If you'd like to lead a meditation, workshop, or
+                    Absolutely! If you&apos;d like to lead a meditation, workshop, or
                     gathering, text {CONTACT.custodian} to discuss. We love
                     supporting community-led offerings.
                   </p>
@@ -249,7 +249,7 @@ export default function ContactPage() {
           transition={{ duration: 0.6 }}
         >
           <p className="text-xl text-cosmic-gray-300">
-            Still have questions? Don't be shy—reach out.
+            Still have questions? Don&apos;t be shy—reach out.
           </p>
           <TextAndyButton variant="secondary" size="large" />
         </motion.div>

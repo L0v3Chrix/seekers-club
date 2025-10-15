@@ -127,7 +127,7 @@ export default function EasterEggPopup({
                     className="space-y-4"
                   >
                     <blockquote className="text-lg md:text-xl text-cosmic-gray-100 leading-relaxed text-center italic">
-                      "{gift.content}"
+                      &quot;{gift.content}&quot;
                     </blockquote>
 
                     {/* Attribution */}

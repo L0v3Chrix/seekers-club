@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 import { SITE_NAME, SITE_TAGLINE, LOCATION, HOURS, ACTIVITIES } from '@/lib/constants'
 import { GALLERY_SPACES } from '@/lib/placeholders'
 import Container from '@/components/ui/Container'
@@ -394,7 +393,7 @@ export default function HomePage() {
               Your Journey Begins Here
             </h2>
             <p className="text-lg text-cosmic-gray-300 max-w-xl mx-auto">
-              Whether you're seeking meditation, connection, or simply a
+              Whether you&apos;re seeking meditation, connection, or simply a
               peaceful space to be, The Seekers Club welcomes you with open
               hearts.
             </p>

@@ -97,7 +97,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-cosmic-gray-400">
             <p>
               © {currentYear} {SITE_NAME}. A sanctuary space anchored by{' '}
-              {CONTACT.custodian}'s vision.
+              {CONTACT.custodian}&apos;s vision.
             </p>
             <div className="flex items-center gap-4">
               <span>Built with intention</span>

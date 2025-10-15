@@ -16,13 +16,13 @@ import { PlaceholderImageProps } from '@/lib/types'
 export default function PlaceholderImage({
   space,
   onClick,
-  priority = false,
+  // priority = false,
 }: PlaceholderImageProps) {
   const {
     aspectRatio,
     colorPalette,
     animationPattern,
-    sacredGeometry,
+    // sacredGeometry, // Not used - placeholders will be replaced by real photos
     particles,
   } = space
 
