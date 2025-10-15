@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --duration-fast: 150ms;
+    --duration-base: 250ms;
+    --duration-slow: 400ms;
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  * {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-cosmic-purple-900 text-white font-body;
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-8 py-3 rounded-full font-semibold transition-all duration-300 inline-flex items-center justify-center;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-to-r from-cosmic-purple-500 to-cosmic-purple-600 hover:from-cosmic-purple-400 hover:to-cosmic-purple-500 hover:shadow-lg hover:shadow-cosmic-purple-500/50 hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply btn bg-transparent border-2 border-cosmic-purple-500 text-cosmic-purple-300 hover:bg-cosmic-purple-500 hover:text-white;
+  }
+}
+
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 30px rgba(212, 169, 71, 0.3);
+  }
+
+  .cosmic-blur {
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* Cosmic Gradient Animation */
+@keyframes cosmicGradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Floating Particles */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+    opacity: 0.6;
+  }
+}
+
+/* Fade In Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
