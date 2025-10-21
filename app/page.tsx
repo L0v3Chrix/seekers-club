@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { SITE_NAME, SITE_TAGLINE, LOCATION, HOURS, ACTIVITIES } from '@/lib/constants'
+import { SITE_NAME, SITE_TAGLINE, LOCATION, HOURS, ACTIVITIES, TRUST_INDICATORS } from '@/lib/constants'
 import { GALLERY_SPACES } from '@/lib/placeholders'
 import Container from '@/components/ui/Container'
 import Button from '@/components/ui/Button'
@@ -54,9 +54,8 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.6 }}
               style={{ lineHeight: 1.8 }}
             >
-              Welcome to a sanctuary space in Austin where authentic connection
-              and healing flourish. A judgment-free zone for meditation,
-              breathwork, wisdom sharing, and growth.
+              A recovery sanctuary grounded in AA principles, welcoming all pathways out of darkness.
+              Where fellowship, consciousness expansion, and service come together.
             </motion.p>
 
             <motion.div
@@ -78,11 +77,7 @@ export default function HomePage() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1 }}
             >
-              {[
-                'Recovery-Friendly',
-                'Judgment-Free Zone',
-                'Drop-In Welcome',
-              ].map((indicator, i) => (
+              {TRUST_INDICATORS.slice(0, 3).map((indicator, i) => (
                 <div
                   key={i}
                   className="flex items-center gap-2 text-cosmic-gold-400"
@@ -123,11 +118,11 @@ export default function HomePage() {
           >
             <div className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500">
-                Sacred Spaces
+                Recovery & Meditation Spaces
               </h2>
               <p className="text-lg text-cosmic-gray-300 max-w-2xl mx-auto">
-                Discover our diverse sanctuary spaces designed for meditation,
-                gathering, and connection.
+                18 dedicated spaces for recovery meetings, meditation, fellowship,
+                and quiet reflection.
               </p>
             </div>
 
@@ -180,11 +175,11 @@ export default function HomePage() {
           >
             <div className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500">
-                What We Offer
+                Recovery Meetings & Fellowship
               </h2>
               <p className="text-lg text-cosmic-gray-200 max-w-2xl mx-auto">
-                A diverse range of practices and gatherings to support your
-                journey.
+                Grounded in AA principles, welcoming all pathways out of darkness.
+                All are worthy here.
               </p>
             </div>
 
@@ -294,7 +289,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
-                A Space for Connection
+                Recovery Happens in Fellowship
               </motion.h2>
               <motion.p
                 className="text-xl text-cosmic-gray-200 max-w-2xl mx-auto leading-relaxed"
@@ -303,9 +298,9 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
-                Sacred geometry reminds us that everything is connected. Every
-                seeker who enters this space becomes part of a greater pattern
-                of healing and growth.
+                Sacred geometry reminds us that we&apos;re all connected. Every person
+                who walks through these doors becomes part of a greater pattern—
+                a fellowship of healing, service, and consciousness expansion.
               </motion.p>
             </div>
           </motion.div>
@@ -390,19 +385,19 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl md:text-3xl font-display font-semibold text-cosmic-gold-500">
-              Your Journey Begins Here
+              All Pathways Are Worthy
             </h2>
             <p className="text-lg text-cosmic-gray-300 max-w-xl mx-auto">
-              Whether you&apos;re seeking meditation, connection, or simply a
-              peaceful space to be, The Seekers Club welcomes you with open
-              hearts.
+              Whether you&apos;re new to recovery, decades into your program, or exploring
+              a path out of darkness for the first time—The Seekers Club welcomes you
+              with open arms and fellowship.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button href="/about" variant="primary" size="large">
-                Learn Our Story
+                Our Recovery Story
               </Button>
               <Button href="/contact" variant="ghost" size="large">
-                Get in Touch
+                Text Andy
               </Button>
             </div>
           </motion.div>

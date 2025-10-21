@@ -6,7 +6,7 @@
  */
 
 export const SITE_NAME = 'The Seekers Club'
-export const SITE_TAGLINE = 'A Sanctuary for the Soul'
+export const SITE_TAGLINE = 'A Recovery Sanctuary in Austin'
 
 // Location Information
 export const LOCATION = {
@@ -70,57 +70,68 @@ export const GALLERY_CATEGORIES = [
 // Activity Offerings
 export const ACTIVITIES = [
   {
+    id: 'recovery-meetings',
+    name: 'Recovery Meetings',
+    icon: '🙏',
+    description: 'The heart of our community. 12-step meetings and fellowship grounded in AA principles, welcoming all recovery pathways.',
+  },
+  {
     id: 'meditation',
-    name: 'Meditation Sessions',
+    name: 'Meditation & Contemplation',
     icon: '🧘',
-    description: 'Guided and silent meditation for all levels',
+    description: 'Spiritual practice for recovery. Guided meditation, silent sitting, and mindfulness for consciousness expansion.',
+  },
+  {
+    id: 'fellowship',
+    name: 'Fellowship & Community',
+    icon: '🤝',
+    description: 'Connection and support. Coffee, conversation, shared meals, and authentic relationships with others in recovery.',
   },
   {
     id: 'breathwork',
-    name: 'Breathwork',
+    name: 'Breathwork & Healing',
     icon: '🌬️',
-    description: 'Conscious breathing practices and circles',
+    description: 'Conscious breathing practices for consciousness expansion and healing in a safe, held space.',
   },
   {
     id: 'book-studies',
-    name: 'Book Studies',
+    name: 'Recovery Literature',
     icon: '📚',
-    description: 'Shared wisdom through transformative texts',
+    description: 'Big Book, 12 & 12, and spiritual texts. Deep dives into recovery literature and wisdom.',
   },
   {
-    id: 'wisdom-circles',
-    name: 'Wisdom Sharing',
-    icon: '🤝',
-    description: 'Authentic connection and sharing circles',
-  },
-  {
-    id: 'open-hours',
-    name: 'Open Gathering',
+    id: 'service',
+    name: 'Service & Support',
     icon: '✨',
-    description: 'Unstructured community time for connection',
+    description: 'Practice the principle of service. Support newcomers, maintain the space, and give back to the recovery community.',
   },
 ] as const
 
 // Social Proof / Trust Indicators
 export const TRUST_INDICATORS = [
-  'Recovery-Friendly',
-  'Judgment-Free Zone',
-  'All Levels Welcome',
-  'Drop-In Friendly',
+  'AA Principles Grounded',
+  'All Pathways Worthy',
+  'Judgment-Free Fellowship',
+  'Newcomer Friendly',
+  'Substance-Free Space',
   'Community-Focused',
 ] as const
 
 // SEO Keywords
 export const SEO_KEYWORDS = [
-  'meditation Austin',
-  'sanctuary space Austin',
-  'healing space Austin',
-  'breathwork Austin',
+  'recovery meetings Austin',
+  'AA meetings Austin',
+  '12-step fellowship Austin',
+  'recovery sanctuary Austin',
+  'sober community Austin',
   'recovery-friendly meditation',
-  'spiritual community Austin',
+  'spiritual recovery Austin',
   'The Seekers Club',
-  'Austin meditation center',
-  'judgment-free sanctuary',
+  'Austin recovery space',
+  'fellowship Austin',
+  'judgment-free recovery',
+  'recovery literature study',
+  'consciousness expansion recovery',
 ] as const
 
 // Performance & Tech Config
