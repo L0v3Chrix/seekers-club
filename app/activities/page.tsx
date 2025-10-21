@@ -19,11 +19,10 @@ export default function ActivitiesPage() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl md:text-6xl font-display text-shadow-glow">
-            What We Offer
+            Recovery Meetings & Fellowship
           </h1>
           <p className="text-xl md:text-2xl text-cosmic-gold-400 font-accent max-w-3xl mx-auto">
-            Diverse practices and gatherings to support every aspect of your
-            journey
+            Grounded in AA principles, welcoming all pathways out of darkness
           </p>
         </motion.div>
 
@@ -66,15 +65,59 @@ export default function ActivitiesPage() {
         >
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500 mb-4">
-              Dive Deeper
+              What to Expect
             </h2>
             <p className="text-cosmic-gray-300 max-w-2xl mx-auto">
-              Here&apos;s what you can expect from each type of gathering at The
-              Seekers Club.
+              Recovery-focused gatherings, spiritual practices, and fellowship opportunities
+              grounded in AA principles and open to all authentic pathways.
             </p>
           </div>
 
-          {/* Meditation Sessions */}
+          {/* Recovery Meetings */}
+          <Card>
+            <div className="space-y-4">
+              <div className="flex items-center gap-4">
+                <div
+                  className="text-4xl cursor-pointer hover:scale-110 transition-transform"
+                  data-easter-egg-trigger
+                >
+                  🙏
+                </div>
+                <h3 className="text-2xl font-display text-cosmic-gold-400">
+                  Recovery Meetings
+                </h3>
+              </div>
+              <div className="space-y-2 text-cosmic-gray-300">
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    The Heart of Our Community:
+                  </strong>{' '}
+                  Regular meetings grounded in 12-step principles, welcoming anyone
+                  working their program or exploring recovery.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    Open Meetings:
+                  </strong>{' '}
+                  All are welcome—whether in recovery or supporting someone who is.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    Step Study Groups:
+                  </strong>{' '}
+                  Deep dives into the 12 steps with others walking the path.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    All Pathways Honored:
+                  </strong>{' '}
+                  AA, NA, CA, SMART Recovery—all authentic recovery approaches are worthy.
+                </p>
+              </div>
+            </div>
+          </Card>
+
+          {/* Meditation & Contemplation */}
           <Card>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
@@ -85,36 +128,38 @@ export default function ActivitiesPage() {
                   🧘
                 </div>
                 <h3 className="text-2xl font-display text-cosmic-gold-400">
-                  Meditation Sessions
+                  Meditation & Contemplation
                 </h3>
               </div>
               <div className="space-y-2 text-cosmic-gray-300">
                 <p>
+                  Spiritual practice is central to recovery. Meditation deepens our
+                  consciousness, strengthens our program, and connects us to something
+                  greater than ourselves.
+                </p>
+                <p>
                   <strong className="text-cosmic-gold-300">
                     Guided Meditation:
                   </strong>{' '}
-                  Led sessions exploring various meditation techniques from
-                  mindfulness to loving-kindness practices.
+                  Led sessions exploring mindfulness, loving-kindness, and recovery-focused practices.
                 </p>
                 <p>
                   <strong className="text-cosmic-gold-300">
                     Silent Sitting:
                   </strong>{' '}
-                  Structured time for personal practice in group energy. Perfect
-                  for both beginners and experienced practitioners.
+                  Structured time for personal reflection in supportive group energy.
                 </p>
                 <p>
                   <strong className="text-cosmic-gold-300">
                     Walking Meditation:
                   </strong>{' '}
-                  Mindful movement through our outdoor spaces, connecting with
-                  nature and breath.
+                  Mindful movement through our outdoor spaces, connecting with nature and breath.
                 </p>
               </div>
             </div>
           </Card>
 
-          {/* Breathwork */}
+          {/* Quiet Spaces for Step Work */}
           <Card>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
@@ -122,58 +167,41 @@ export default function ActivitiesPage() {
                   className="text-4xl cursor-pointer hover:scale-110 transition-transform"
                   data-easter-egg-trigger
                 >
-                  🌬️
+                  📖
                 </div>
                 <h3 className="text-2xl font-display text-cosmic-gold-400">
-                  Breathwork Circles
+                  Quiet Spaces for Step Work
                 </h3>
               </div>
               <div className="space-y-2 text-cosmic-gray-300">
                 <p>
-                  Conscious connected breathing practices that facilitate
-                  release, healing, and expanded awareness. From gentle Pranayama
-                  to transformative Holotropic-style sessions, we explore the
-                  full spectrum of breath as medicine.
+                  Working the steps requires quiet time for reflection, inventory,
+                  and honest self-examination. We offer 18 dedicated spaces designed
+                  for this sacred work.
                 </p>
                 <p>
-                  These circles are facilitated in a safe, held space with
-                  integration time built in. No experience necessary—just
-                  willingness to explore.
+                  <strong className="text-cosmic-gold-300">
+                    Private Reflection Rooms:
+                  </strong>{' '}
+                  Peaceful spaces for writing inventory and working through your steps.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    Recovery Library:
+                  </strong>{' '}
+                  Big Book, 12 & 12, and recovery literature available for study.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    Outdoor Contemplation:
+                  </strong>{' '}
+                  Garden and outdoor spaces for prayer and meditation.
                 </p>
               </div>
             </div>
           </Card>
 
-          {/* Book Studies */}
-          <Card>
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div
-                  className="text-4xl cursor-pointer hover:scale-110 transition-transform"
-                  data-easter-egg-trigger
-                >
-                  📚
-                </div>
-                <h3 className="text-2xl font-display text-cosmic-gold-400">
-                  Book Studies & Wisdom Sharing
-                </h3>
-              </div>
-              <div className="space-y-2 text-cosmic-gray-300">
-                <p>
-                  Deep dives into transformative texts—from ancient spiritual
-                  classics to modern psychology and recovery literature. We read,
-                  discuss, and integrate the teachings that shape our paths.
-                </p>
-                <p>
-                  Recent and ongoing studies include works by Ram Dass, Pema
-                  Chödrön, Eckhart Tolle, and recovery-focused authors. Bring
-                  your perspectives, questions, and insights.
-                </p>
-              </div>
-            </div>
-          </Card>
-
-          {/* Wisdom Circles */}
+          {/* Fellowship & Community */}
           <Card>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
@@ -184,25 +212,116 @@ export default function ActivitiesPage() {
                   🤝
                 </div>
                 <h3 className="text-2xl font-display text-cosmic-gold-400">
-                  Wisdom Sharing Circles
+                  Fellowship & Community
                 </h3>
               </div>
               <div className="space-y-2 text-cosmic-gray-300">
                 <p>
-                  Structured sharing circles where seekers come together to
-                  speak and listen from the heart. These aren&apos;t therapy
-                  sessions—they&apos;re containers for authentic expression,
-                  witnessing, and collective wisdom.
+                  Recovery happens in community. Fellowship is where we practice
+                  honesty, build authentic connections, and sharpen each other
+                  through shared experience.
                 </p>
                 <p>
-                  Topics vary from gratitude practices to navigating life
-                  transitions. Every voice matters. Every story teaches.
+                  <strong className="text-cosmic-gold-300">
+                    Open Fellowship Hours:
+                  </strong>{' '}
+                  Coffee, conversation, ping pong, and organic connection with others in recovery.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    Shared Meals:
+                  </strong>{' '}
+                  Potlucks and community dinners where we break bread together.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    Fire Circle Gatherings:
+                  </strong>{' '}
+                  Evening gatherings around the fire for fellowship and storytelling.
                 </p>
               </div>
             </div>
           </Card>
 
-          {/* Open Gathering */}
+          {/* Breathwork & Consciousness Expansion */}
+          <Card>
+            <div className="space-y-4">
+              <div className="flex items-center gap-4">
+                <div
+                  className="text-4xl cursor-pointer hover:scale-110 transition-transform"
+                  data-easter-egg-trigger
+                >
+                  🌬️
+                </div>
+                <h3 className="text-2xl font-display text-cosmic-gold-400">
+                  Breathwork & Consciousness Expansion
+                </h3>
+              </div>
+              <div className="space-y-2 text-cosmic-gray-300">
+                <p>
+                  Conscious breathing practices support recovery by facilitating
+                  release, healing, and expanded awareness. From gentle techniques
+                  to transformative sessions, we explore breath as a tool for
+                  spiritual awakening.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    Pranayama & Gentle Breathwork:
+                  </strong>{' '}
+                  Foundational breathing practices for calm and presence.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    Holotropic-Style Sessions:
+                  </strong>{' '}
+                  Deep transformative breathwork in safe, held space with integration time.
+                </p>
+              </div>
+            </div>
+          </Card>
+
+          {/* Recovery Literature */}
+          <Card>
+            <div className="space-y-4">
+              <div className="flex items-center gap-4">
+                <div
+                  className="text-4xl cursor-pointer hover:scale-110 transition-transform"
+                  data-easter-egg-trigger
+                >
+                  📚
+                </div>
+                <h3 className="text-2xl font-display text-cosmic-gold-400">
+                  Recovery Literature & Book Studies
+                </h3>
+              </div>
+              <div className="space-y-2 text-cosmic-gray-300">
+                <p>
+                  Deep dives into recovery literature and spiritual texts that
+                  guide our journey from darkness to light.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    Big Book Study:
+                  </strong>{' '}
+                  Regular study of Alcoholics Anonymous&apos; foundational text.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    12 Steps & 12 Traditions:
+                  </strong>{' '}
+                  Exploring the principles that guide recovery programs.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    Recovery Memoirs & Spiritual Classics:
+                  </strong>{' '}
+                  Works by recovery-focused spiritual teachers and authors.
+                </p>
+              </div>
+            </div>
+          </Card>
+
+          {/* Service Opportunities */}
           <Card>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
@@ -213,26 +332,39 @@ export default function ActivitiesPage() {
                   ✨
                 </div>
                 <h3 className="text-2xl font-display text-cosmic-gold-400">
-                  Open Gathering Hours
+                  Service Opportunities
                 </h3>
               </div>
               <div className="space-y-2 text-cosmic-gray-300">
                 <p>
-                  Unstructured community time where the space is simply open for
-                  connection. Come play ping pong, sit by the fire, work in the
-                  garden, or just be present with others who are also seeking.
+                  Service is a cornerstone of recovery. We can only keep what we
+                  have by giving it away. The Seekers Club offers many ways to
+                  practice this essential principle.
                 </p>
                 <p>
-                  This is where organic conversations happen, friendships form,
-                  and spontaneous jam sessions or impromptu meditations arise.
-                  The magic is in the not-planning.
+                  <strong className="text-cosmic-gold-300">
+                    Support Newcomers:
+                  </strong>{' '}
+                  Welcome and support people new to recovery or exploring their path.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    Maintain the Space:
+                  </strong>{' '}
+                  Garden care, setup/cleanup for gatherings, and keeping our sanctuary beautiful.
+                </p>
+                <p>
+                  <strong className="text-cosmic-gold-300">
+                    Lead & Facilitate:
+                  </strong>{' '}
+                  Share your experience by leading meetings or facilitating practices.
                 </p>
               </div>
             </div>
           </Card>
         </motion.div>
 
-        {/* Other Offerings */}
+        {/* Additional Recovery Support */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -242,34 +374,25 @@ export default function ActivitiesPage() {
           <Card>
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500">
-                Additional Experiences
+                Additional Recovery Support
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-cosmic-gray-300">
                 <div>
                   <h4 className="text-lg font-display text-cosmic-gold-300 mb-2">
-                    Crystal Bowl Sound Healing
+                    Wellness Practices
                   </h4>
                   <p>
-                    Vibrational healing through the resonant tones of crystal
-                    singing bowls.
+                    Sauna, cold plunge, yoga, and movement practices supporting
+                    physical recovery and overall well-being.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-display text-cosmic-gold-300 mb-2">
-                    Movement & Flow
+                    One-on-One Support
                   </h4>
                   <p>
-                    Yoga, dance, tai chi, and any form of mindful movement that
-                    connects body and spirit.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-lg font-display text-cosmic-gold-300 mb-2">
-                    Fire Ceremonies
-                  </h4>
-                  <p>
-                    Sacred gatherings around the fire circle for release,
-                    intention, and connection.
+                    Connect with sponsors, work steps with others, or find
+                    mentorship in your recovery journey.
                   </p>
                 </div>
                 <div>
@@ -277,8 +400,17 @@ export default function ActivitiesPage() {
                     Personal Practice Time
                   </h4>
                   <p>
-                    Use any of our 18 spaces for your own meditation, study, or
-                    quiet reflection.
+                    Use any of our 18 recovery and meditation spaces for your own
+                    step work, prayer, or quiet reflection.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-display text-cosmic-gold-300 mb-2">
+                    Special Recovery Events
+                  </h4>
+                  <p>
+                    Celebrations, anniversaries, workshops, and gatherings that
+                    honor recovery milestones and deepen fellowship.
                   </p>
                 </div>
               </div>
@@ -308,9 +440,9 @@ export default function ActivitiesPage() {
                 </p>
               </div>
               <p className="text-cosmic-gray-300 max-w-2xl mx-auto">
-                Specific activity times vary and evolve based on community
-                interest. Text Andy for current schedule or to propose a
-                gathering.
+                Recovery meeting times and activity schedules vary based on
+                community needs. Text Andy for the current meeting schedule,
+                upcoming gatherings, or to propose an activity.
               </p>
               <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
                 <TextAndyButton variant="primary" size="large" />

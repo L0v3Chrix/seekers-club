@@ -186,13 +186,74 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-lg font-display text-cosmic-gold-300 mb-2">
-                    Do I need to book ahead?
+                    Is this a treatment center?
                   </h3>
                   <p className="text-cosmic-gray-300">
-                    Nope! We&apos;re open daily during the hours listed above. Just
-                    drop by whenever feels right. For specific gatherings or if
-                    you want to check what&apos;s happening, text {CONTACT.custodian}
-                    .
+                    No. The Seekers Club is a fellowship home and recovery community
+                    space. We&apos;re not licensed clinicians or treatment professionals—
+                    we&apos;re people in recovery supporting each other through fellowship,
+                    meetings, and spiritual practice.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-display text-cosmic-gold-300 mb-2">
+                    Do I need to be in AA to come here?
+                  </h3>
+                  <p className="text-cosmic-gray-300">
+                    No. While we&apos;re grounded in AA principles, <strong className="text-cosmic-gold-300">all
+                    pathways out of darkness are worthy</strong>. If you&apos;re working any
+                    recovery program (AA, NA, CA, SMART Recovery, etc.) or exploring
+                    recovery for the first time, you&apos;re welcome here.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-display text-cosmic-gold-300 mb-2">
+                    Are there recovery meetings here?
+                  </h3>
+                  <p className="text-cosmic-gray-300">
+                    Yes! Recovery meetings are our primary offering. We host regular
+                    12-step meetings and study groups. Text {CONTACT.custodian} for the
+                    current meeting schedule and upcoming gatherings.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-display text-cosmic-gold-300 mb-2">
+                    Is this a sober space?
+                  </h3>
+                  <p className="text-cosmic-gray-300">
+                    Absolutely. No substances allowed on the property. This is a safe,
+                    substance-free environment for people in recovery to gather, work
+                    their program, and support each other.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-display text-cosmic-gold-300 mb-2">
+                    I&apos;m new to recovery—can I still come?
+                  </h3>
+                  <p className="text-cosmic-gray-300">
+                    YES. Newcomers are especially welcome. The Seekers Club is a
+                    judgment-free space where everyone is figuring it out together.
+                    Whether you&apos;re on day 1 or year 10, you belong here.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-display text-cosmic-gold-300 mb-2">
+                    Do I need to share my story?
+                  </h3>
+                  <p className="text-cosmic-gray-300">
+                    Never. You can participate as much or as little as feels right.
+                    Some people come just to sit in silence or work their steps alone.
+                    Others come for deep fellowship. Both are perfect.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-display text-cosmic-gold-300 mb-2">
+                    What if I relapsed?
+                  </h3>
+                  <p className="text-cosmic-gray-300">
+                    Come anyway. Recovery isn&apos;t linear, and this community understands
+                    that. All pathways include setbacks. You&apos;re still welcome, still
+                    worthy, and still part of the fellowship.
                   </p>
                 </div>
                 <div>
@@ -200,39 +261,30 @@ export default function ContactPage() {
                     Is there a cost?
                   </h3>
                   <p className="text-cosmic-gray-300">
-                    The Seekers Club operates on a donation basis. Give what
-                    feels right, or nothing at all. This is about access, not
-                    profit.
+                    The Seekers Club operates on a donation basis. Give what feels
+                    right, or nothing at all. Recovery should be accessible to everyone,
+                    regardless of financial situation.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-lg font-display text-cosmic-gold-300 mb-2">
-                    What should I bring?
+                    Do I need to book ahead?
                   </h3>
                   <p className="text-cosmic-gray-300">
-                    Just yourself. We have meditation cushions, yoga mats, and
-                    whatever else you might need. If you have a favorite blanket
-                    or journal, feel free to bring those too.
+                    Nope! Drop-ins are welcome during open hours. For recovery meeting
+                    times or specific gatherings, text {CONTACT.custodian} for the current
+                    schedule.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-lg font-display text-cosmic-gold-300 mb-2">
-                    Can I host an event here?
+                    Can I use the space for quiet step work?
                   </h3>
                   <p className="text-cosmic-gray-300">
-                    Absolutely! If you&apos;d like to lead a meditation, workshop, or
-                    gathering, text {CONTACT.custodian} to discuss. We love
-                    supporting community-led offerings.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-display text-cosmic-gold-300 mb-2">
-                    Is this space recovery-friendly?
-                  </h3>
-                  <p className="text-cosmic-gray-300">
-                    Yes! This is a judgment-free, recovery-friendly space. No
-                    substances on the property, and we honor all paths to
-                    healing.
+                    Absolutely. We have 18 dedicated recovery and meditation spaces
+                    designed for exactly this. Whether you need a quiet room for
+                    inventory work, the library for Big Book study, or outdoor space
+                    for reflection—you&apos;re welcome to use the space as you need.
                   </p>
                 </div>
               </div>
@@ -248,8 +300,12 @@ export default function ContactPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xl text-cosmic-gray-300">
-            Still have questions? Don&apos;t be shy—reach out.
+          <p className="text-xl text-cosmic-gray-300 max-w-2xl mx-auto">
+            Still have questions? Want to know about meeting times? Ready to
+            drop in for fellowship? Don&apos;t be shy—reach out.
+          </p>
+          <p className="text-lg text-cosmic-gold-400 font-accent">
+            All pathways are worthy. You belong here.
           </p>
           <TextAndyButton variant="secondary" size="large" />
         </motion.div>

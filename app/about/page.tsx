@@ -19,10 +19,10 @@ export default function AboutPage() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl md:text-6xl font-display text-shadow-glow">
-            Our Story
+            A Recovery Sanctuary
           </h1>
           <p className="text-xl md:text-2xl text-cosmic-gold-400 font-accent">
-            A sanctuary space born from intention and anchored by vision
+            Where fellowship, consciousness expansion, and service come together
           </p>
         </motion.div>
 
@@ -35,26 +35,26 @@ export default function AboutPage() {
           <Card>
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500">
-                Meet Andy, Our Custodian
+                Why The Seekers Club Exists
               </h2>
               <div className="space-y-4 text-cosmic-gray-300 leading-relaxed">
                 <p>
-                  The Seekers Club exists because of {CONTACT.custodian}&apos;s
-                  vision—a vision to create a space where authentic connection,
-                  healing, and growth aren&apos;t just welcomed, but celebrated.
+                  The Seekers Club was founded on a simple truth: <strong className="text-cosmic-gold-300">recovery happens in community</strong>.
                 </p>
                 <p>
-                  More than just a property owner, {CONTACT.custodian} is the
-                  custodian of this sanctuary. His energy and intention anchor
-                  every corner of this space, from the meditation rooms to the
-                  sacred fire circle. What began as a personal practice of
-                  mindfulness and recovery has blossomed into a refuge for
-                  seekers from all walks of life.
+                  Grounded in the principles of Alcoholics Anonymous, this space exists for people
+                  working their program—whether you&apos;re in early recovery, decades into the journey,
+                  or exploring a path out of darkness for the first time.
                 </p>
                 <p>
-                  This isn&apos;t a business—it&apos;s a calling. Every space has been
-                  thoughtfully designed to hold whatever you bring: joy, grief,
-                  curiosity, or simply the need to sit in silence.
+                  We believe <strong className="text-cosmic-gold-300">all pathways that lead somebody out of darkness are worthy</strong>.
+                  While rooted in AA traditions, we honor every authentic approach to recovery. What
+                  matters is the willingness to grow, to serve, and to support each other.
+                </p>
+                <p>
+                  This isn&apos;t a treatment center. It&apos;s not therapy. It&apos;s a <strong className="text-cosmic-gold-300">fellowship home</strong>—
+                  a place where people in recovery come together to work their program, sharpen each other,
+                  and practice the principles that lead to consciousness expansion and healing.
                 </p>
               </div>
             </div>
@@ -74,46 +74,55 @@ export default function AboutPage() {
                 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500 cursor-pointer hover:opacity-80 transition-opacity"
                 data-easter-egg-trigger
               >
-                Our Philosophy
+                What We Do Here
               </h2>
               <div className="space-y-4 text-cosmic-gray-300 leading-relaxed">
+                <p>
+                  This is a fellowship home where people in recovery:
+                </p>
                 <div>
                   <h3 className="text-xl font-display text-cosmic-gold-300 mb-2">
-                    Judgment-Free Zone
+                    Work Their Program Together
                   </h3>
                   <p>
-                    No matter where you are on your journey, you belong here.
-                    This is a space of radical acceptance and compassion.
+                    Through meetings, step work, and spiritual practice—we support each other&apos;s
+                    journey through recovery with honesty and accountability.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-display text-cosmic-gold-300 mb-2">
-                    Recovery-Friendly
+                    Sharpen Each Other
                   </h3>
                   <p>
-                    The Seekers Club is proudly recovery-friendly. We honor all
-                    paths to healing and sobriety, creating an environment that
-                    supports transformation.
+                    Through authentic connection and shared experience, we grow stronger together.
+                    Iron sharpens iron—fellowship challenges us to show up better every day.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-display text-cosmic-gold-300 mb-2">
-                    Diverse Practices
+                    Expand Consciousness
                   </h3>
                   <p>
-                    From silent meditation to ecstatic dance, from book studies
-                    to breathwork circles—we honor the many paths to awareness
-                    and connection.
+                    Through meditation, breathwork, and contemplative practices—we explore the spiritual
+                    dimension of recovery and deepen our awareness.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-display text-cosmic-gold-300 mb-2">
-                    Community Over Commerce
+                    Practice Service
                   </h3>
                   <p>
-                    This space prioritizes authentic connection over profit.
-                    It&apos;s a labor of love, maintained by those who believe in
-                    its mission.
+                    By showing up, supporting newcomers, and giving back—we practice the principle
+                    that we can only keep what we have by giving it away.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-display text-cosmic-gold-300 mb-2">
+                    Build Genuine Community
+                  </h3>
+                  <p>
+                    With others who understand the journey from darkness to light. No masks needed—
+                    this is where we can be fully ourselves.
                   </p>
                 </div>
               </div>
@@ -131,21 +140,27 @@ export default function AboutPage() {
           <Card>
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-display font-semibold text-cosmic-gold-500">
-                The Sacred Space
+                The Space
               </h2>
               <div className="space-y-4 text-cosmic-gray-300 leading-relaxed">
                 <p>
-                  Nestled in {LOCATION.address.city}, Texas, this property has
-                  been transformed into a multi-dimensional sanctuary. With 18
-                  distinct spaces—from cozy meditation nooks to expansive
-                  gathering halls, from outdoor fire circles to movement
-                  studios—there&apos;s a corner for every mood and practice.
+                  A beautiful {LOCATION.address.city} home with 5 bedrooms transformed into <strong className="text-cosmic-gold-300">18 distinct recovery
+                  and meditation spaces</strong>:
+                </p>
+                <ul className="list-disc list-inside space-y-2 pl-4">
+                  <li>Meeting rooms for recovery gatherings</li>
+                  <li>Quiet meditation rooms for step work and reflection</li>
+                  <li>Outdoor spaces with fire circle for fellowship</li>
+                  <li>Library for recovery literature and book studies</li>
+                  <li>Breathwork and movement spaces</li>
+                  <li>Common areas for community connection</li>
+                </ul>
+                <p>
+                  Plus: sauna, cold plunge, ping pong, workout equipment, garden, and more.
                 </p>
                 <p>
-                  Every space has been intentionally curated to support
-                  different aspects of the human experience: spaces for
-                  solitude, spaces for community, spaces for movement, and
-                  spaces for stillness.
+                  Every space has been intentionally designed to support recovery—whether you need
+                  quiet solitude for inventory work, or community connection for fellowship.
                 </p>
               </div>
             </div>
@@ -166,20 +181,21 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-cosmic-gray-300 leading-relaxed">
                 <p>
-                  The Seekers Club is open daily from 8 AM to 8 PM. Drop-ins
-                  are welcome—no appointment needed. Whether you&apos;re seeking 10
-                  minutes of quiet or a full day of immersion, you&apos;re invited
-                  to use the space as you need.
+                  The Seekers Club is open daily for recovery meetings and fellowship.
+                  Drop-ins are welcome—whether you&apos;re attending a meeting, seeking quiet
+                  space for step work, or looking for community connection. No appointment
+                  needed.
                 </p>
                 <p>
-                  We host regular gatherings including meditation sessions,
-                  breathwork circles, book studies, and open community hours.
-                  Check our activities page for current offerings, or simply
-                  show up and see what resonates.
+                  We host regular recovery meetings, meditation sessions, breathwork circles,
+                  book studies, and open fellowship hours. Text {CONTACT.custodian} for the
+                  current meeting schedule, or simply show up and find your place in the
+                  fellowship.
                 </p>
                 <p>
-                  Questions? Text {CONTACT.custodian} anytime. He&apos;s here to
-                  support your journey in whatever way serves you best.
+                  Whether you need 10 minutes of quiet reflection or a full day of immersion
+                  in recovery work, you&apos;re invited to use the space as you need. All
+                  pathways out of darkness are worthy here.
                 </p>
               </div>
               <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
@@ -201,15 +217,21 @@ export default function AboutPage() {
           transition={{ duration: 0.6 }}
         >
           <p className="text-xl text-cosmic-gray-300 max-w-2xl mx-auto leading-relaxed">
-            This is more than a meditation center. It&apos;s a living, breathing
-            experiment in what happens when we create space for the soul to
-            expand, for hearts to connect, and for seekers to find their way.
+            This is more than a meeting space. It&apos;s a living, breathing fellowship
+            where recovery happens in community—where we work our program together,
+            sharpen each other through connection, and support the journey from darkness
+            to light.
+          </p>
+          <p className="text-xl text-cosmic-gray-300 max-w-2xl mx-auto leading-relaxed">
+            <strong className="text-cosmic-gold-300">All pathways out of darkness are worthy.</strong>
+            {' '}Whether you&apos;re in early recovery or decades into your program, whether you
+            follow AA, NA, or any authentic path—you belong here.
           </p>
           <p
             className="text-2xl text-cosmic-gold-400 font-accent cursor-pointer hover:opacity-80 transition-opacity"
             data-easter-egg-trigger
           >
-            Welcome home, seeker. ✨
+            Welcome home, fellow traveler. ✨
           </p>
         </motion.div>
       </Container>

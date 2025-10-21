@@ -1,0 +1,944 @@
+/**
+ * Easter Egg Spiritual Gifts Data
+ *
+ * Curated wisdom from Andy's favorite spiritual teachers
+ * 100 total → 33 final selections (67 backups)
+ *
+ * IMPORTANT COPYRIGHT NOTE:
+ * - Nahko & Wookiefoot entries use THEMES/INSPIRATIONS only
+ * - Andy must provide specific approved lyrics or quotes for contemporary artists
+ * - All quotes from deceased teachers are documented/attributed
+ */
+
+export interface SpiritualGift {
+  id: string
+  content: string
+  teacher: string
+  category: 'inspirational' | 'reflective' | 'mindfulness' | 'poetic' | 'action'
+  source?: string // Book/song title if applicable
+  isFinal?: boolean // true = selected for 33, false = backup
+}
+
+export const SPIRITUAL_GIFTS: SpiritualGift[] = [
+  // ========================================
+  // JOSEPH CAMPBELL (15 quotes)
+  // ========================================
+  {
+    id: 'campbell-1',
+    content: 'The privilege of a lifetime is being who you are.',
+    teacher: 'Joseph Campbell',
+    category: 'inspirational',
+    isFinal: true,
+  },
+  {
+    id: 'campbell-2',
+    content: 'Follow your bliss and the universe will open doors where there were only walls.',
+    teacher: 'Joseph Campbell',
+    category: 'action',
+    isFinal: true,
+  },
+  {
+    id: 'campbell-3',
+    content: 'The cave you fear to enter holds the treasure you seek.',
+    teacher: 'Joseph Campbell',
+    category: 'inspirational',
+    isFinal: true,
+  },
+  {
+    id: 'campbell-4',
+    content: 'We must let go of the life we have planned, so as to accept the one that is waiting for us.',
+    teacher: 'Joseph Campbell',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'campbell-5',
+    content: 'The agony of breaking through personal limitations is the agony of spiritual growth.',
+    teacher: 'Joseph Campbell',
+    category: 'inspirational',
+    isFinal: false,
+  },
+  {
+    id: 'campbell-6',
+    content: 'Where you stumble, there lies your treasure.',
+    teacher: 'Joseph Campbell',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'campbell-7',
+    content: 'Life is without meaning. You bring the meaning to it. The meaning of life is whatever you ascribe it to be.',
+    teacher: 'Joseph Campbell',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'campbell-8',
+    content: 'It is by going down into the abyss that we recover the treasures of life.',
+    teacher: 'Joseph Campbell',
+    category: 'inspirational',
+    isFinal: false,
+  },
+  {
+    id: 'campbell-9',
+    content: 'If you can see your path laid out in front of you, step by step, you know it\'s not your path.',
+    teacher: 'Joseph Campbell',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'campbell-10',
+    content: 'The goal of life is to make your heartbeat match the beat of the universe.',
+    teacher: 'Joseph Campbell',
+    category: 'inspirational',
+    isFinal: false,
+  },
+  {
+    id: 'campbell-11',
+    content: 'Opportunities to find deeper powers within ourselves come when life seems most challenging.',
+    teacher: 'Joseph Campbell',
+    category: 'inspirational',
+    isFinal: false,
+  },
+  {
+    id: 'campbell-12',
+    content: 'The privilege of a lifetime is being who you are.',
+    teacher: 'Joseph Campbell',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'campbell-13',
+    content: 'What if I were to discover that the least amongst them all, the poorest of all beggars, the most impudent of all offenders, yea the very fiend himself— that these are within me?',
+    teacher: 'Joseph Campbell',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'campbell-14',
+    content: 'Find a place inside where there's joy, and the joy will burn out the pain.',
+    teacher: 'Joseph Campbell',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'campbell-15',
+    content: 'Your sacred space is where you can find yourself over and over again.',
+    teacher: 'Joseph Campbell',
+    category: 'mindfulness',
+    isFinal: false,
+  },
+
+  // ========================================
+  // CARL JUNG (12 quotes)
+  // ========================================
+  {
+    id: 'jung-1',
+    content: 'Until you make the unconscious conscious, it will direct your life and you will call it fate.',
+    teacher: 'Carl Jung',
+    category: 'reflective',
+    isFinal: true,
+  },
+  {
+    id: 'jung-2',
+    content: 'One does not become enlightened by imagining figures of light, but by making the darkness conscious.',
+    teacher: 'Carl Jung',
+    category: 'reflective',
+    isFinal: true,
+  },
+  {
+    id: 'jung-3',
+    content: 'Your vision will become clear only when you can look into your own heart. Who looks outside, dreams; who looks inside, awakes.',
+    teacher: 'Carl Jung',
+    category: 'mindfulness',
+    isFinal: false,
+  },
+  {
+    id: 'jung-4',
+    content: 'I am not what happened to me. I am what I choose to become.',
+    teacher: 'Carl Jung',
+    category: 'inspirational',
+    isFinal: false,
+  },
+  {
+    id: 'jung-5',
+    content: 'The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed.',
+    teacher: 'Carl Jung',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'jung-6',
+    content: 'Knowing your own darkness is the best method for dealing with the darknesses of other people.',
+    teacher: 'Carl Jung',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'jung-7',
+    content: 'The privilege of a lifetime is to become who you truly are.',
+    teacher: 'Carl Jung',
+    category: 'inspirational',
+    isFinal: false,
+  },
+  {
+    id: 'jung-8',
+    content: 'Loneliness does not come from having no people about one, but from being unable to communicate the things that seem important.',
+    teacher: 'Carl Jung',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'jung-9',
+    content: 'Everything that irritates us about others can lead us to an understanding of ourselves.',
+    teacher: 'Carl Jung',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'jung-10',
+    content: 'The foundation of all mental illness is the unwillingness to experience legitimate suffering.',
+    teacher: 'Carl Jung',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'jung-11',
+    content: 'There is no coming to consciousness without pain.',
+    teacher: 'Carl Jung',
+    category: 'inspirational',
+    isFinal: false,
+  },
+  {
+    id: 'jung-12',
+    content: 'Show me a sane man and I will cure him for you.',
+    teacher: 'Carl Jung',
+    category: 'reflective',
+    isFinal: false,
+  },
+
+  // ========================================
+  // BUDDHA (12 quotes)
+  // ========================================
+  {
+    id: 'buddha-1',
+    content: 'Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.',
+    teacher: 'Buddha',
+    category: 'mindfulness',
+    isFinal: true,
+  },
+  {
+    id: 'buddha-2',
+    content: 'The mind is everything. What you think you become.',
+    teacher: 'Buddha',
+    category: 'inspirational',
+    isFinal: true,
+  },
+  {
+    id: 'buddha-3',
+    content: 'Peace comes from within. Do not seek it without.',
+    teacher: 'Buddha',
+    category: 'mindfulness',
+    isFinal: true,
+  },
+  {
+    id: 'buddha-4',
+    content: 'No one saves us but ourselves. No one can and no one may. We ourselves must walk the path.',
+    teacher: 'Buddha',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'buddha-5',
+    content: 'You yourself, as much as anybody in the entire universe, deserve your love and affection.',
+    teacher: 'Buddha',
+    category: 'inspirational',
+    isFinal: false,
+  },
+  {
+    id: 'buddha-6',
+    content: 'Three things cannot be long hidden: the sun, the moon, and the truth.',
+    teacher: 'Buddha',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'buddha-7',
+    content: 'Holding on to anger is like grasping a hot coal with the intent of throwing it at someone else; you are the one who gets burned.',
+    teacher: 'Buddha',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'buddha-8',
+    content: 'Better than a thousand hollow words, is one word that brings peace.',
+    teacher: 'Buddha',
+    category: 'mindfulness',
+    isFinal: false,
+  },
+  {
+    id: 'buddha-9',
+    content: 'In the end, only three things matter: how much you loved, how gently you lived, and how gracefully you let go of things not meant for you.',
+    teacher: 'Buddha',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'buddha-10',
+    content: 'The trouble is, you think you have time.',
+    teacher: 'Buddha',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'buddha-11',
+    content: 'Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.',
+    teacher: 'Buddha',
+    category: 'inspirational',
+    isFinal: false,
+  },
+  {
+    id: 'buddha-12',
+    content: 'The root of suffering is attachment.',
+    teacher: 'Buddha',
+    category: 'reflective',
+    isFinal: false,
+  },
+
+  // ========================================
+  // JESUS CHRIST (10 quotes)
+  // ========================================
+  {
+    id: 'jesus-1',
+    content: 'Love your neighbor as yourself.',
+    teacher: 'Jesus Christ',
+    category: 'action',
+    isFinal: true,
+  },
+  {
+    id: 'jesus-2',
+    content: 'Let him who is without sin cast the first stone.',
+    teacher: 'Jesus Christ',
+    category: 'reflective',
+    isFinal: true,
+  },
+  {
+    id: 'jesus-3',
+    content: 'Do to others as you would have them do to you.',
+    teacher: 'Jesus Christ',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'jesus-4',
+    content: 'For where your treasure is, there your heart will be also.',
+    teacher: 'Jesus Christ',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'jesus-5',
+    content: 'Ask and it will be given to you; seek and you will find; knock and the door will be opened to you.',
+    teacher: 'Jesus Christ',
+    category: 'inspirational',
+    isFinal: false,
+  },
+  {
+    id: 'jesus-6',
+    content: 'Blessed are the peacemakers, for they will be called children of God.',
+    teacher: 'Jesus Christ',
+    category: 'inspirational',
+    isFinal: false,
+  },
+  {
+    id: 'jesus-7',
+    content: 'Love your enemies and pray for those who persecute you.',
+    teacher: 'Jesus Christ',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'jesus-8',
+    content: 'The kingdom of God is within you.',
+    teacher: 'Jesus Christ',
+    category: 'mindfulness',
+    isFinal: false,
+  },
+  {
+    id: 'jesus-9',
+    content: 'Let your light shine before others.',
+    teacher: 'Jesus Christ',
+    category: 'inspirational',
+    isFinal: false,
+  },
+  {
+    id: 'jesus-10',
+    content: 'Whatever you did for one of the least of these, you did for me.',
+    teacher: 'Jesus Christ',
+    category: 'action',
+    isFinal: false,
+  },
+
+  // ========================================
+  // RAM DASS (10 quotes)
+  // ========================================
+  {
+    id: 'ramdass-1',
+    content: 'Be here now.',
+    teacher: 'Ram Dass',
+    category: 'mindfulness',
+    isFinal: true,
+  },
+  {
+    id: 'ramdass-2',
+    content: 'We're all just walking each other home.',
+    teacher: 'Ram Dass',
+    category: 'inspirational',
+    isFinal: true,
+  },
+  {
+    id: 'ramdass-3',
+    content: 'The most important aspect of love is not in giving or the receiving: it's in the being.',
+    teacher: 'Ram Dass',
+    category: 'mindfulness',
+    isFinal: false,
+  },
+  {
+    id: 'ramdass-4',
+    content: 'Treat everyone you meet like God in drag.',
+    teacher: 'Ram Dass',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'ramdass-5',
+    content: 'The quieter you become, the more you can hear.',
+    teacher: 'Ram Dass',
+    category: 'mindfulness',
+    isFinal: false,
+  },
+  {
+    id: 'ramdass-6',
+    content: 'Suffering is part of our training program for becoming wise.',
+    teacher: 'Ram Dass',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'ramdass-7',
+    content: 'Your problem is you are too busy holding on to your unworthiness.',
+    teacher: 'Ram Dass',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'ramdass-8',
+    content: 'As long as you have certain desires about how it ought to be you can't see how it is.',
+    teacher: 'Ram Dass',
+    category: 'mindfulness',
+    isFinal: false,
+  },
+  {
+    id: 'ramdass-9',
+    content: 'The heart surrenders everything to the moment. The mind judges and holds back.',
+    teacher: 'Ram Dass',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'ramdass-10',
+    content: 'Let go of who you think you're supposed to be and embrace who you are.',
+    teacher: 'Ram Dass',
+    category: 'action',
+    isFinal: false,
+  },
+
+  // ========================================
+  // THICH NHAT HANH (8 quotes)
+  // ========================================
+  {
+    id: 'thichnhathanh-1',
+    content: 'Breathing in, I calm body and mind. Breathing out, I smile.',
+    teacher: 'Thich Nhat Hanh',
+    category: 'mindfulness',
+    isFinal: true,
+  },
+  {
+    id: 'thichnhathanh-2',
+    content: 'The present moment is the only moment available to us, and it is the door to all moments.',
+    teacher: 'Thich Nhat Hanh',
+    category: 'mindfulness',
+    isFinal: true,
+  },
+  {
+    id: 'thichnhathanh-3',
+    content: 'Walk as if you are kissing the Earth with your feet.',
+    teacher: 'Thich Nhat Hanh',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'thichnhathanh-4',
+    content: 'Letting go gives us freedom, and freedom is the only condition for happiness.',
+    teacher: 'Thich Nhat Hanh',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'thichnhathanh-5',
+    content: 'Peace in the world starts with peace in oneself.',
+    teacher: 'Thich Nhat Hanh',
+    category: 'mindfulness',
+    isFinal: false,
+  },
+  {
+    id: 'thichnhathanh-6',
+    content: 'Smile, breathe, and go slowly.',
+    teacher: 'Thich Nhat Hanh',
+    category: 'mindfulness',
+    isFinal: false,
+  },
+  {
+    id: 'thichnhathanh-7',
+    content: 'When you plant lettuce and it does not grow well, you don't blame the lettuce.',
+    teacher: 'Thich Nhat Hanh',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'thichnhathanh-8',
+    content: 'The way must be in you; the destination also must be in you.',
+    teacher: 'Thich Nhat Hanh',
+    category: 'reflective',
+    isFinal: false,
+  },
+
+  // ========================================
+  // PEMA CHÖDRÖN (6 quotes)
+  // ========================================
+  {
+    id: 'pema-1',
+    content: 'You are the sky. Everything else is just the weather.',
+    teacher: 'Pema Chödrön',
+    category: 'inspirational',
+    isFinal: true,
+  },
+  {
+    id: 'pema-2',
+    content: 'Nothing ever goes away until it teaches us what we need to know.',
+    teacher: 'Pema Chödrön',
+    category: 'reflective',
+    isFinal: true,
+  },
+  {
+    id: 'pema-3',
+    content: 'The most fundamental aggression to ourselves is remaining ignorant by not having the courage to look at ourselves honestly.',
+    teacher: 'Pema Chödrön',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'pema-4',
+    content: 'Compassion is not a relationship between the healer and the wounded. It's a relationship between equals.',
+    teacher: 'Pema Chödrön',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'pema-5',
+    content: 'We think that the point is to pass the test or overcome the problem, but the truth is that things don't really get solved.',
+    teacher: 'Pema Chödrön',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'pema-6',
+    content: 'The only reason we don't open our hearts and minds to other people is that they trigger confusion in us.',
+    teacher: 'Pema Chödrön',
+    category: 'reflective',
+    isFinal: false,
+  },
+
+  // ========================================
+  // ALAN WATTS (4 quotes)
+  // ========================================
+  {
+    id: 'watts-1',
+    content: 'You are an aperture through which the universe is looking at and exploring itself.',
+    teacher: 'Alan Watts',
+    category: 'reflective',
+    isFinal: true,
+  },
+  {
+    id: 'watts-2',
+    content: 'The only way to make sense out of change is to plunge into it, move with it, and join the dance.',
+    teacher: 'Alan Watts',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'watts-3',
+    content: 'Man suffers only because he takes seriously what the gods made for fun.',
+    teacher: 'Alan Watts',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'watts-4',
+    content: 'The meaning of life is just to be alive. It is so plain and so obvious and so simple.',
+    teacher: 'Alan Watts',
+    category: 'mindfulness',
+    isFinal: false,
+  },
+
+  // ========================================
+  // RUMI (4 quotes)
+  // ========================================
+  {
+    id: 'rumi-1',
+    content: 'The wound is the place where the Light enters you.',
+    teacher: 'Rumi',
+    category: 'inspirational',
+    isFinal: true,
+  },
+  {
+    id: 'rumi-2',
+    content: 'Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.',
+    teacher: 'Rumi',
+    category: 'reflective',
+    isFinal: true,
+  },
+  {
+    id: 'rumi-3',
+    content: 'Let yourself be silently drawn by the strange pull of what you really love. It will not lead you astray.',
+    teacher: 'Rumi',
+    category: 'action',
+    isFinal: false,
+  },
+  {
+    id: 'rumi-4',
+    content: 'Don't grieve. Anything you lose comes round in another form.',
+    teacher: 'Rumi',
+    category: 'inspirational',
+    isFinal: false,
+  },
+
+  // ========================================
+  // NAHKO & MEDICINE FOR THE PEOPLE (10 THEMES)
+  // NOTE: These are THEMATIC INSPIRATIONS, not direct lyrics
+  // Andy must provide approved specific quotes/lyrics
+  // ========================================
+  {
+    id: 'nahko-theme-1',
+    content: '[ANDY: Please provide an approved Nahko quote about connection to nature and the Earth]',
+    teacher: 'Nahko Bear',
+    category: 'poetic',
+    source: 'To be determined by Andy',
+    isFinal: true,
+  },
+  {
+    id: 'nahko-theme-2',
+    content: '[ANDY: Please provide an approved Nahko quote about activism and showing up]',
+    teacher: 'Nahko Bear',
+    category: 'action',
+    source: 'To be determined by Andy',
+    isFinal: true,
+  },
+  {
+    id: 'nahko-theme-3',
+    content: '[ANDY: Please provide an approved Nahko quote about spiritual practice]',
+    teacher: 'Nahko Bear',
+    category: 'mindfulness',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'nahko-theme-4',
+    content: '[ANDY: Please provide approved Nahko wisdom about healing and transformation]',
+    teacher: 'Nahko Bear',
+    category: 'inspirational',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'nahko-theme-5',
+    content: '[ANDY: Please provide approved Nahko wisdom about community and togetherness]',
+    teacher: 'Nahko Bear',
+    category: 'action',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'nahko-theme-6',
+    content: '[ANDY: Please provide approved Nahko wisdom about being present]',
+    teacher: 'Nahko Bear',
+    category: 'mindfulness',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'nahko-theme-7',
+    content: '[ANDY: Please provide approved Nahko wisdom about gratitude]',
+    teacher: 'Nahko Bear',
+    category: 'poetic',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'nahko-theme-8',
+    content: '[ANDY: Please provide approved Nahko wisdom about authenticity]',
+    teacher: 'Nahko Bear',
+    category: 'inspirational',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'nahko-theme-9',
+    content: '[ANDY: Please provide approved Nahko wisdom about resilience]',
+    teacher: 'Nahko Bear',
+    category: 'inspirational',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'nahko-theme-10',
+    content: '[ANDY: Please provide approved Nahko wisdom about spiritual awakening]',
+    teacher: 'Nahko Bear',
+    category: 'poetic',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+
+  // ========================================
+  // WOOKIEFOOT (8 THEMES)
+  // NOTE: These are THEMATIC INSPIRATIONS, not direct lyrics
+  // Andy must provide approved specific quotes/lyrics
+  // ========================================
+  {
+    id: 'wookiefoot-theme-1',
+    content: '[ANDY: Please provide an approved Wookiefoot quote about conscious living]',
+    teacher: 'Wookiefoot',
+    category: 'poetic',
+    source: 'To be determined by Andy',
+    isFinal: true,
+  },
+  {
+    id: 'wookiefoot-theme-2',
+    content: '[ANDY: Please provide an approved Wookiefoot quote about unity and oneness]',
+    teacher: 'Wookiefoot',
+    category: 'inspirational',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'wookiefoot-theme-3',
+    content: '[ANDY: Please provide approved Wookiefoot wisdom about spiritual practice]',
+    teacher: 'Wookiefoot',
+    category: 'action',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'wookiefoot-theme-4',
+    content: '[ANDY: Please provide approved Wookiefoot wisdom about being present]',
+    teacher: 'Wookiefoot',
+    category: 'mindfulness',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'wookiefoot-theme-5',
+    content: '[ANDY: Please provide approved Wookiefoot wisdom about joy and celebration]',
+    teacher: 'Wookiefoot',
+    category: 'poetic',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'wookiefoot-theme-6',
+    content: '[ANDY: Please provide approved Wookiefoot wisdom about transformation]',
+    teacher: 'Wookiefoot',
+    category: 'inspirational',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'wookiefoot-theme-7',
+    content: '[ANDY: Please provide approved Wookiefoot wisdom about connection]',
+    teacher: 'Wookiefoot',
+    category: 'poetic',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'wookiefoot-theme-8',
+    content: '[ANDY: Please provide approved Wookiefoot wisdom about awareness]',
+    teacher: 'Wookiefoot',
+    category: 'mindfulness',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+
+  // ========================================
+  // NATALIE RISE (5 entries)
+  // NOTE: Awaiting Andy's specific input
+  // ========================================
+  {
+    id: 'natalie-1',
+    content: '[ANDY: Please provide Natalie Rise quote #1]',
+    teacher: 'Natalie Rise',
+    category: 'inspirational',
+    source: 'To be determined by Andy',
+    isFinal: true,
+  },
+  {
+    id: 'natalie-2',
+    content: '[ANDY: Please provide Natalie Rise quote #2]',
+    teacher: 'Natalie Rise',
+    category: 'reflective',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'natalie-3',
+    content: '[ANDY: Please provide Natalie Rise quote #3]',
+    teacher: 'Natalie Rise',
+    category: 'mindfulness',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'natalie-4',
+    content: '[ANDY: Please provide Natalie Rise quote #4]',
+    teacher: 'Natalie Rise',
+    category: 'action',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+  {
+    id: 'natalie-5',
+    content: '[ANDY: Please provide Natalie Rise quote #5]',
+    teacher: 'Natalie Rise',
+    category: 'inspirational',
+    source: 'To be determined by Andy',
+    isFinal: false,
+  },
+
+  // ========================================
+  // REFLECTIVE QUESTIONS (6 original prompts)
+  // ========================================
+  {
+    id: 'question-1',
+    content: 'What would you do if you knew you couldn't fail?',
+    teacher: 'Reflective Prompt',
+    category: 'reflective',
+    isFinal: true,
+  },
+  {
+    id: 'question-2',
+    content: 'What are you ready to let go of?',
+    teacher: 'Reflective Prompt',
+    category: 'reflective',
+    isFinal: true,
+  },
+  {
+    id: 'question-3',
+    content: 'How can you be more gentle with yourself today?',
+    teacher: 'Reflective Prompt',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'question-4',
+    content: 'What does your soul most need right now?',
+    teacher: 'Reflective Prompt',
+    category: 'reflective',
+    isFinal: false,
+  },
+  {
+    id: 'question-5',
+    content: 'Where in your body are you holding tension?',
+    teacher: 'Reflective Prompt',
+    category: 'mindfulness',
+    isFinal: false,
+  },
+  {
+    id: 'question-6',
+    content: 'What small act of kindness could you offer today?',
+    teacher: 'Reflective Prompt',
+    category: 'action',
+    isFinal: false,
+  },
+]
+
+// ========================================
+// HELPER FUNCTIONS
+// ========================================
+
+/**
+ * Get the 33 final selected gifts
+ */
+export function getFinalGifts(): SpiritualGift[] {
+  return SPIRITUAL_GIFTS.filter(gift => gift.isFinal === true)
+}
+
+/**
+ * Get backup gifts (67 alternates)
+ */
+export function getBackupGifts(): SpiritualGift[] {
+  return SPIRITUAL_GIFTS.filter(gift => gift.isFinal !== true)
+}
+
+/**
+ * Get gifts by category
+ */
+export function getGiftsByCategory(category: SpiritualGift['category']): SpiritualGift[] {
+  return SPIRITUAL_GIFTS.filter(gift => gift.category === category)
+}
+
+/**
+ * Get gifts by teacher
+ */
+export function getGiftsByTeacher(teacher: string): SpiritualGift[] {
+  return SPIRITUAL_GIFTS.filter(gift => gift.teacher === teacher)
+}
+
+/**
+ * Get a random gift that hasn't been seen
+ */
+export function getRandomUnseenGift(seenIds: string[]): SpiritualGift | null {
+  const unseenGifts = getFinalGifts().filter(gift => !seenIds.includes(gift.id))
+
+  if (unseenGifts.length === 0) return null
+
+  const randomIndex = Math.floor(Math.random() * unseenGifts.length)
+  return unseenGifts[randomIndex]
+}
+
+// Export total counts for validation
+export const GIFT_COUNTS = {
+  total: SPIRITUAL_GIFTS.length,
+  final: getFinalGifts().length,
+  backup: getBackupGifts().length,
+  byTeacher: {
+    josephCampbell: getGiftsByTeacher('Joseph Campbell').length,
+    carlJung: getGiftsByTeacher('Carl Jung').length,
+    buddha: getGiftsByTeacher('Buddha').length,
+    jesus: getGiftsByTeacher('Jesus Christ').length,
+    ramDass: getGiftsByTeacher('Ram Dass').length,
+    thichNhatHanh: getGiftsByTeacher('Thich Nhat Hanh').length,
+    pemaChodron: getGiftsByTeacher('Pema Chödrön').length,
+    alanWatts: getGiftsByTeacher('Alan Watts').length,
+    rumi: getGiftsByTeacher('Rumi').length,
+    nahko: getGiftsByTeacher('Nahko Bear').length,
+    wookiefoot: getGiftsByTeacher('Wookiefoot').length,
+    natalieRise: getGiftsByTeacher('Natalie Rise').length,
+  },
+  byCategory: {
+    inspirational: getGiftsByCategory('inspirational').length,
+    reflective: getGiftsByCategory('reflective').length,
+    mindfulness: getGiftsByCategory('mindfulness').length,
+    poetic: getGiftsByCategory('poetic').length,
+    action: getGiftsByCategory('action').length,
+  },
+}
